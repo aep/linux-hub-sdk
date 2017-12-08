@@ -6,6 +6,7 @@
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 #![feature(use_extern_macros)]
+#![feature(decl_macro)]
 
 #![cfg_attr(feature = "rest-service", feature(plugin, custom_derive))]
 #![cfg_attr(feature = "rest-service", plugin(rocket_codegen))]

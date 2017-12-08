@@ -5,8 +5,13 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+#![feature(decl_macro)]
+
+extern crate serde_json;
+
 use rocket::State;
-use rocket_contrib::{Json, Value};
+use rocket_contrib::{Json};
+use self::serde_json::Value;
 
 use geeny_api::models::ThingRequest;
 
